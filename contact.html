@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Vivian Maier</title>
+  <meta name="description" content="Contactez Dedal Couleur : formulaire de contact, adresse e-mail et numéro de téléphone.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=MedievalSharp&amp;display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource-variable/lilex@5.2.1/index.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.className = "js";</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="site-header__brand" href="index.html" aria-label="Dedal Couleur, retour à l’accueil">
+        <img class="site-header__logo" src="assets/logo.png" width="149" height="149" alt="">
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Ouvrir le menu">
+        <span class="nav-toggle__bar"></span>
+      </button>
+      <nav class="site-nav" id="menu-principal" aria-label="Navigation principale">
+        <ul class="site-nav__list">
+          <li><a class="site-nav__link" href="index.html">accueil</a></li>
+          <li><a class="site-nav__link" href="a-propos.html">à propos</a></li>
+          <li><a class="site-nav__link" href="oeuvres.html">oeuvres</a></li>
+          <li><a class="site-nav__link" href="contact.html" aria-current="page">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu" tabindex="-1">
+    <div class="page-intro">
+      <h1 class="page-title">Contact</h1>
+    </div>
+
+    <form class="contact-form" id="contact-form" method="post">
+      <div class="contact-form__panel">
+        <div class="contact-form__column contact-form__column--left">
+          <div class="field">
+            <label class="field__label" for="nom">Nom <span class="field__required" aria-hidden="true">*</span></label>
+            <input class="field__control" id="nom" name="nom" type="text" autocomplete="family-name" required>
+          </div>
+          <div class="field">
+            <label class="field__label" for="prenom">Prénom <span class="field__required" aria-hidden="true">*</span></label>
+            <input class="field__control" id="prenom" name="prenom" type="text" autocomplete="given-name" required>
+          </div>
+          <div class="field">
+            <label class="field__label" for="email">Adresse email <span class="field__required" aria-hidden="true">*</span></label>
+            <input class="field__control" id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label class="field__label" for="telephone">Numéro de téléphone</label>
+            <input class="field__control" id="telephone" name="telephone" type="tel" autocomplete="tel">
+          </div>
+        </div>
+
+        <div class="contact-form__column contact-form__column--right">
+          <div class="field field--short">
+            <label class="field__label" for="objet">Objet <span class="field__required" aria-hidden="true">*</span></label>
+            <input class="field__control" id="objet" name="objet" type="text" required>
+          </div>
+          <div class="field">
+            <label class="field__label" for="message">Message <span class="field__required" aria-hidden="true">*</span></label>
+            <textarea class="field__control field__control--message" id="message" name="message" rows="8" required></textarea>
+          </div>
+        </div>
+      </div>
+
+      <p class="contact-form__note"><span class="field__required" aria-hidden="true">*</span> Champs obligatoires</p>
+
+      <div class="contact-form__actions">
+        <button class="button" type="submit">Envoyer</button>
+        <p class="contact-form__status" id="form-status" role="status"></p>
+      </div>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <img class="site-footer__logo" src="assets/logo-xl.webp" width="562" height="562" alt="Dedal Couleur" loading="lazy">
+
+      <nav class="site-footer__nav" aria-label="Pied de page">
+        <ul class="site-footer__nav-list">
+          <li><a class="site-footer__link" href="index.html">Accueil</a></li>
+          <li><a class="site-footer__link" href="a-propos.html">A propos</a></li>
+          <li><a class="site-footer__link" href="oeuvres.html">Oeuvres</a></li>
+          <li><a class="site-footer__link" href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-footer__contact">
+        <a class="site-footer__link site-footer__email" href="mailto:Dedalcouleur@gmail.com">Dedalcouleur@gmail.com</a>
+        <a class="site-footer__link" href="tel:+33472694117">04.72.69.41.17</a>
+        <a class="site-footer__message" href="mailto:Dedalcouleur@gmail.com">
+          <svg class="site-footer__message-arrow" viewBox="0 0 42 24" width="30" height="17" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12H40M30 3l10 9-10 9"/></svg>
+          Nous envoyer un message
+        </a>
+      </div>
+
+      <p class="site-footer__legal">Politique de confidentialité · 2026</p>
+    </div>
+  </footer>
+</body>
+</html>
